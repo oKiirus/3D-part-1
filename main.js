@@ -6,11 +6,12 @@ function setup(){
     
  cam = new Camera(0, 0, -10)
 
-for(var x = -1; x <= 1; x += 0.05){
-    for(var z = -1; z <= 1; z+= 0.05){
-        
- dots.push(new Dot(x, 0 ,z))
+for(var x = -5; x <= 5; x += 0.5){
+    for(var y = -5; y <= 5; y+= 0.5){
+        for(var z = -5; z <= 5; z+= 0.5){
+ dots.push(new Dot(x, y ,z))
         }
+    }
     }
 
 
